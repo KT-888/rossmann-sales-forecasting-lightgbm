@@ -36,9 +36,8 @@ Kaggleの「Rossmann Store Sales」データセットを用いた、LightGBMに�
 | 2    | 15.83%  | 1403 | 53.2% better|
 | 3    | 10.64%  |  668 | 75.2% better|
 | Mean | 12.86%  |  983 | 64.1% better|
-※ 注記: early stoppingの評価にテスト期間を使っているため、精度は楽観的に出ています。今後、検証用の期間を分ける予定です。
-※ 注記: early stoppingの評価にテスト期間を使っているため、精度は楽観的に出ています。今後、検証用の期間を分ける予定です。<br>
 
+※ 注記: early stoppingの評価にテスト期間を使っているため、精度は楽観的に出ています。今後、検証用の期間を分ける予定です。
 
 <img src="images/LightGBMによる需要予測.png" alt="LightGBMによる需要予測" width="500">
 
