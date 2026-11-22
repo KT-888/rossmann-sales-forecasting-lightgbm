@@ -8,7 +8,7 @@ Kaggleの「Rossmann Store Sales」データセットを用いた、LightGBMに�
 分析結果サマリー (Store No.7)  
 本モデルの検証において、単純なラグ予測（前々週の同時期の売上を予測値とする手法）と比較し、売上予測精度を 64.1% 改善することに成功しました。  
 •	CV平均 RMSE(%): 12.86%（売上のバラつきに対し、高い精度で追従）  
-•	CV平均 MASE: 0.359（1.0を下回るほど優秀とされる指標で、大幅な改善を達成）  
+•	CV平均 ベースライン比MAE: 0.359（lag_14予測のMAEを1.0とした比。1.0を下回るほどベースラインより良く、大幅な改善を達成）  
 •	ベースライン改善率: 64.1% 向上
 
 ## 実装のこだわり（技術的ポイント） 
@@ -26,7 +26,7 @@ Kaggleの「Rossmann Store Sales」データセットを用いた、LightGBMに�
 ##  使用技術 
 •	Language: Python 3.x  
 •	Model: LightGBM (LGBMRegressor)  
-•	Evaluation: RMSE, MAE, MASE (Mean Absolute Scaled Error)  
+•	Evaluation: RMSE, MAE, ベースライン比MAE(lag_14予測に対する比)  
 •	Visualization: Matplotlib, Seaborn, Japanize-matplotlib  
 
 ##  予測精度の結果
@@ -60,4 +60,3 @@ Kaggleの「Rossmann Store Sales」データセットを用いた、LightGBMに�
 •	追加のラグ特徴量  
 •	ハイパーパラメータチューニング  
 •	検証期間を分けたearly stopping(テスト期間を評価に使わない)  
-•	評価指標の見直し(現在の「MASE」はlag_14予測に対するMAEの比のため、一般的なMASEの定義に合わせる)
