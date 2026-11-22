@@ -48,7 +48,8 @@ Kaggleの「Rossmann Store Sales」データセットを用いた、LightGBMに�
 •	季節性（Calendar info）: 曜日や月といった周期性が安定して寄与しています。  
 •	自己相関（Lag features）: 過去の売上トレンドも一定の寄与を見せています。  
 
-  
+
+
 <img src="images/feature Importance.png" alt="feature Importance" width="500">
 
 ##  Dataset  
