@@ -1,6 +1,6 @@
 # rossmann-sales-forecasting-lightgbm
 LightGBMによる時系列売上予測（Rossmann Store Salesデータ・単店舗分析）
-※ 注記: early stoppingの評価にテスト期間を使っているため、精度は楽観的に出ています。今後、検証用の期間を分ける予定です。
+
 Kaggleの「Rossmann Store Sales」データセットを用いた、LightGBMによる需要予測モデルの実装サンプルです。 実務を想定し、時系列データの特性を考慮した検証プロセス（Expanding Window CV）を採用しています。
 
 ## プロジェクト概要  
@@ -36,7 +36,7 @@ Kaggleの「Rossmann Store Sales」データセットを用いた、LightGBMに�
 | 2    | 15.83%  | 1403 | 53.2% better|
 | 3    | 10.64%  |  668 | 75.2% better|
 | Mean | 12.86%  |  983 | 64.1% better|
-
+※ 注記: early stoppingの評価にテスト期間を使っているため、精度は楽観的に出ています。今後、検証用の期間を分ける予定です。
 ※ 注記: early stoppingの評価にテスト期間を使っているため、精度は楽観的に出ています。今後、検証用の期間を分ける予定です。<br>
 
 
